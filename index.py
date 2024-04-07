@@ -33,6 +33,24 @@ class RestaurantPizza(db.Model):
 
 # Routes
 
+@app.route('/restaurants', methods=['POST'])
+def create_restaurant():
+    data = request.get_json()
+    name = data.get('name')
+    address = data.get('address')
+
+    # Create a new restaurant object
+    new_restaurant = Restaurant(name=name, address=address)
+
+    try:
+        # Add the restaurant to the database
+        db.session.add(new_restaurant)
+        db.session.commit()
+        return jsonify({'message': 'Restaurant added successfully'}), 201
+    except IntegrityError:
+        db.session.rollback()
+        return jsonify({'error': 'Restaurant name already exists'}), 400
+
 @app.route('/')
 def index():
     return 'Welcome to the Restaurant'
