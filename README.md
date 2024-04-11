@@ -1,32 +1,32 @@
 # Pizza Restaurant API
 
-# This is a simple RESTful API built with Flask to manage pizza restaurants and their pizzas.
-# It allows you to perform CRUD operations on restaurants and pizzas, as well as associate pizzas with restaurants and set their prices.
+#### This is a simple RESTful API built with Flask to manage pizza restaurants and their pizzas.
+#### It allows you to perform CRUD operations on restaurants and pizzas, as well as associate pizzas with restaurants and set their prices.
 
 ## Installation
 
-# 1. Make sure you have Python installed. You can download it from python.org.
+### 1. Make sure you have Python installed. You can download it from python.org.
 
 # 2. Clone this repository:
-#    ```bash
-#    git clone https://github.com/your_username/pizza-restaurant-api.git
+##   ```bash
+###    git clone https://github.com/your_username/pizza-restaurant-api.git
 #    ```
 
 # 3. Navigate to the project directory:
-#    ```bash
-#    cd pizza-restaurant-api
+###    ```bash
+###    cd pizza-restaurant-api
 #    ```
 
 # 4. Install the required dependencies:
-#    ```bash
-#    pip install -r requirements.txt
+###    ```bash
+###    pip install -r requirements.txt
 #    ```
 
 ## Usage
 
 # 1. Run the Flask application:
 #    ```bash
-#    python app.py
+####    python app.py
 #    ```
 
 # 2. The API will be accessible at `http://localhost:5000`.
